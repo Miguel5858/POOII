@@ -88,6 +88,6 @@ body {
       font-size: 24px; /* Reducir el tamaño de los títulos en dispositivos móviles */
     }
     .slide p {
-      font-size: 14px; /* Reducir el tamaño del texto en dispositivos móviles */
+      font-size: 20px; /* Reducir el tamaño del texto en dispositivos móviles */
     }
   }
