@@ -93,4 +93,7 @@ p {
   .navigation {
     bottom: 10px; /* Ajustar la posición de los botones de navegación en dispositivos móviles */
   }
+  .presentacion {
+    padding-bottom: 40px; /* Agregar espacio en la parte inferior para los botones */
+  }
 }
