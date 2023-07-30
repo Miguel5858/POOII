@@ -1,96 +1,96 @@
 body {
-    font-family: "Arial", sans-serif, "fuente-personalizada", cursive;
-    margin: 0;
-    padding: 0;
-    background-color: indigo;
-  }
-  
-  .card {
-    width: 80%;
-    max-width: 800px;
-    max-height: 600px;
-    margin: 30px auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: #2e1065; /* Establecemos el color de fondo a indigo */
-  }
-  
-  .presentacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    position: relative;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 95%;
-    height: 90%;
-    text-align: center;
-    padding: 20px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    z-index: 0;
-  }
-  
-  .slide1 {
-    opacity: 1;
-    z-index: 1;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-  }
-  
-  h1, h2 {
-    margin-top: 0;
-    text-transform: uppercase;
-    color: #9333ea;
-  }
-  
-  p {
-    line-height: 1.5;
-    color: white;
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .navigation button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin: 0 5px;
-    cursor: pointer;
-  }
+  font-family: "Arial", sans-serif, "fuente-personalizada", cursive;
+  margin: 0;
+  padding: 0;
+  background-color: indigo;
+}
+
+.card {
+  width: 80%;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #2e1065; /* Establecemos el color de fondo a indigo */
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ajustamos el ancho para ocupar toda la tarjeta */
+  height: 100%; /* Ajustamos el alto para ocupar toda la tarjeta */
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.slide1 {
+  opacity: 1;
+  z-index: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+h1, h2 {
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #9333ea;
+}
+
+p {
+  line-height: 1.5;
+  color: white;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px; /* Ajustamos el padding para los botones de navegación */
+  font-size: 14px; /* Ajustamos el tamaño de fuente para los botones de navegación */
+  border: none;
+  border-radius: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+}
 
 /* Media query para dispositivos móviles con un ancho máximo de 725px */
 @media screen and (max-width: 725px) {
-    .card {
-      padding: 10px; /* Reducir el padding de la card en dispositivos móviles */
-    }
-    .slide1 h1, .slide h2 {
-      font-size: 24px; /* Reducir el tamaño de los títulos en dispositivos móviles */
-    }
-    .slide p {
-      font-size: 20px; /* Reducir el tamaño del texto en dispositivos móviles */
-    }
-    .navigation button{
-      padding: 10px 20px;
-    }
+  .card {
+    padding: 10px; /* Reducir el padding de la card en dispositivos móviles */
   }
+  .slide1 h1, .slide h2 {
+    font-size: 24px; /* Reducir el tamaño de los títulos en dispositivos móviles */
+  }
+  .slide p {
+    font-size: 18px; /* Reducir el tamaño del texto en dispositivos móviles */
+  }
+  .navigation {
+    bottom: 10px; /* Ajustar la posición de los botones de navegación en dispositivos móviles */
+  }
+}
