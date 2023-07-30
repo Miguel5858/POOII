@@ -90,4 +90,7 @@ body {
     .slide p {
       font-size: 20px; /* Reducir el tamaño del texto en dispositivos móviles */
     }
+    .navigation button{
+      padding: 10px 20px;
+    }
   }
