@@ -6,8 +6,8 @@ body {
 }
 
 .card {
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 900px;
   margin: 30px auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -28,10 +28,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Ajustamos el ancho para ocupar toda la tarjeta */
-  height: 100%; /* Ajustamos el alto para ocupar toda la tarjeta */
+  width: 90%; /* Ajustamos el ancho para ocupar toda la tarjeta */
+  height: 90%; /* Ajustamos el alto para ocupar toda la tarjeta */
   text-align: center;
-  padding: 20px;
+  padding: 30px;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   z-index: 0;
@@ -62,25 +62,29 @@ p {
 .navigation {
   display: flex;
   justify-content: center;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  width: 100%; /* Ancho completo */
+  padding: 0 20px; /* Agregar un poco de espacio en los lados */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+  z-index: 1000; /* Asegurarse de que los botones estén por encima de todo */
 }
 
 .navigation button {
   background-color: #4CAF50;
   color: white;
-  padding: 12px 24px; /* Ajustamos el padding para los botones de navegación */
-  font-size: 14px; /* Ajustamos el tamaño de fuente para los botones de navegación */
+  padding: 12px 24px;
+  font-size: 14px;
   border: none;
   border-radius: 4px;
   margin: 0 5px;
   cursor: pointer;
 }
 
-/* Media query para dispositivos móviles con un ancho máximo de 725px */
-@media screen and (max-width: 725px) {
+/* Media query para dispositivos móviles con un ancho máximo de 600px */
+@media screen and (max-width: 600px) {
   .card {
     padding: 10px; /* Reducir el padding de la card en dispositivos móviles */
   }
@@ -93,7 +97,18 @@ p {
   .navigation {
     bottom: 10px; /* Ajustar la posición de los botones de navegación en dispositivos móviles */
   }
+  .navigation button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px; /* Aumentar el tamaño de los botones en dispositivos móviles */
+    font-size: 16px; /* Aumentar el tamaño de la fuente de los botones en dispositivos móviles */
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
   .presentacion {
-    padding-bottom: 40px; /* Agregar espacio en la parte inferior para los botones */
+    padding-bottom: 60px; /* Agregar espacio en la parte inferior para los botones */
   }
 }
+
